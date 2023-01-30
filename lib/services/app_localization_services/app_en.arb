@@ -1,0 +1,7 @@
+{
+  "language": "English",
+  "@language": {
+    "description": "The Current Language is English."
+  },
+  "hello":"Hello"
+}
