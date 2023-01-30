@@ -10,9 +10,8 @@ class UserApiServices implements UserServices {
     List<User> userList = [];
 
     try {
-      Response response = await DioClient.getClient()!.get(
-          APIConstants.USER_API,
-          queryParameters: {"page": "2"});
+      Response response = await DioClient.getClient()!
+          .get(APIConstants.USER_API, queryParameters: {"page": "2"});
 
       if (response.statusCode == 200) {
         if (response.data != null) {

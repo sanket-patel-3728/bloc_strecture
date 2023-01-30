@@ -24,19 +24,19 @@ final ThemeData lightTheme = ThemeData(
       ),
     ),
   ),
-    // colorScheme: ColorScheme(
-    //   primary: Color(0xFFA724D3),
-    //   secondary: Color(0xFFA724D3),
-    //   surface: Color(0xFFA724D3),
-    //   background: Color(0xFFA724D3),
-    //   error: Color(0xFFA724D3),
-    //   onPrimary: Color(0xFFA724D3),
-    //   onSecondary: Color(0xFFA724D3),
-    //   onSurface: Color(0xFFA724D3),
-    //   onBackground: Color(0xFFA724D3),
-    //   onError: Color(0xFFA724D3),
-    //   brightness: Brightness.light,
-    // ),
+  // colorScheme: ColorScheme(
+  //   primary: Color(0xFFA724D3),
+  //   secondary: Color(0xFFA724D3),
+  //   surface: Color(0xFFA724D3),
+  //   background: Color(0xFFA724D3),
+  //   error: Color(0xFFA724D3),
+  //   onPrimary: Color(0xFFA724D3),
+  //   onSecondary: Color(0xFFA724D3),
+  //   onSurface: Color(0xFFA724D3),
+  //   onBackground: Color(0xFFA724D3),
+  //   onError: Color(0xFFA724D3),
+  //   brightness: Brightness.light,
+  // ),
 );
 
 final ThemeData darkTheme = ThemeData(

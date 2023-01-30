@@ -4,7 +4,7 @@ class ThemeState extends Equatable {
   final AppTheme appTheme;
   final ThemeData themeData;
 
-  const ThemeState(this.themeData,this.appTheme);
+  const ThemeState(this.themeData, this.appTheme);
 
   @override
   List<Object> get props => [appTheme];

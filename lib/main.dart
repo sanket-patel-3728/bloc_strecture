@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'bloc/language_bloc.dart';
+import 'bloc/languages/language_bloc.dart';
 import 'bloc/theme_bloc/theme_bloc.dart';
 import 'services/app_localization_services/l10n.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
