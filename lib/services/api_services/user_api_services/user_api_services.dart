@@ -1,3 +1,4 @@
+import 'package:api_call/services/local_db/database_services.dart';
 import 'package:dio/dio.dart';
 import '../../../constants/constants.dart';
 import '../../../models/UserModel.dart';
@@ -18,6 +19,10 @@ class UserApiServices implements UserServices {
           response.data["data"]
               .map((e) => userList.add(User.fromJson(e)))
               .toList();
+          DatabaseHelper.instance.delete(DbConstants.USER_TABLE_NAME);
+          for (var user in userList) {
+            user.insertIntoDatabase();
+          }
           return userList;
         }
       } else {

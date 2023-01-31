@@ -1,4 +1,11 @@
-class User {
+import 'dart:convert';
+
+import 'package:api_call/constants/constants.dart';
+
+import '../services/local_db/database_services.dart';
+
+class User extends DatabaseModel {
+  String? query;
   int? id;
   String? email;
   String? firstName;
@@ -15,13 +22,25 @@ class User {
     avatar = json['avatar'];
   }
 
+  @override
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['email'] = this.email;
-    data['first_name'] = this.firstName;
-    data['last_name'] = this.lastName;
-    data['avatar'] = this.avatar;
-    return data;
+    Map<String, dynamic> data = {};
+    data['id'] = id;
+    data['email'] = email;
+    data['first_name'] = firstName;
+    data['last_name'] = lastName;
+    data['avatar'] = avatar;
+    Map<String, dynamic> finalData = {"data": jsonEncode(data)};
+    return finalData;
+  }
+
+  @override
+  void setQuery() {
+    query = "";
+  }
+
+  @override
+  String tableName() {
+    return DbConstants.USER_TABLE_NAME;
   }
 }
