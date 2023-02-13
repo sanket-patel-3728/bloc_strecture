@@ -13,3 +13,5 @@ extension StringToLanguage on String {
     return Languages.english;
   }
 }
+
+  enum CommonBlocStatus { isLoading , loaded, none , error , noInternet}

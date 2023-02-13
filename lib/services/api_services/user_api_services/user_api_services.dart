@@ -23,6 +23,7 @@ class UserApiServices implements UserServices {
           for (var user in userList) {
             user.insertIntoDatabase();
           }
+          await Future.delayed(const Duration(seconds: 2));
           return userList;
         }
       } else {

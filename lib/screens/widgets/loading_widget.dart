@@ -15,14 +15,16 @@ class ProgressWidget extends StatelessWidget {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              const CircularProgressIndicator(color: Colors.black),
+              const CircularProgressIndicator(color: Colors.blue),
               const SizedBox(
-                width: 20,
+                width: 15,
               ),
               Text(
                 progressText,
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
               )
             ],
           ),
